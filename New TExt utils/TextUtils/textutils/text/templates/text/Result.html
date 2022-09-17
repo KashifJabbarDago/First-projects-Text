@@ -1,0 +1,11 @@
+{% extends 'Basic.html' %}
+
+{% block title %}Result{% endblock title %}
+
+{% block body %}
+<div class="container mt-5">
+    <h2>Below is your {{title}} text</h2>
+    <hr>
+    <p style="word-wrap: break-word;">{{text}}</p>
+</div>
+{% endblock body %}

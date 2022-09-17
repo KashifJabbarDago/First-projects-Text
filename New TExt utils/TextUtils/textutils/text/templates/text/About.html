@@ -1,0 +1,28 @@
+{% extends 'Basic.html' %}
+
+{% block title %} About {% endblock title %}
+{% block style %}
+h2::after{
+    content:' ';
+    display:block;
+    background-color:darkslategrey;
+    width:300px;
+    height:3px;
+
+}
+{% endblock style %}
+{% block body %}
+{% load static %}
+<div class="container mt-5 p-4">
+    <h2 class="display-5">Who we are? </h2>
+    <p class="lead">We are nothing but just developers who help to customers about their daily basis issues regarding 
+        websites,
+        We developed this website to help our customer about their daily basis text and error removing, Behind purpose 
+        of building this website is to ensure our customer to use this website about their essay whatever they want to set
+        in their text, Capitalize text, Title text, Small text, or even remove Punctuation from their text if does exist,
+        Our Customer can also do count text their each and every Character by entering inside our textarea box,
+        They have have facility to do anything with their text by our text-utils website
+    </p>
+    <a  href="/" class="btn btn-outline-dark">Reach to us</a>
+</div>
+{% endblock body %}

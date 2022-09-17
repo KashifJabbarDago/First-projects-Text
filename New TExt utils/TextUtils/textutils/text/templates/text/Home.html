@@ -1,0 +1,38 @@
+{% extends 'Basic.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+<div class="container">
+    <div class="row ">
+        <form method="post" action="/result/"> {% csrf_token %}
+            <div class="form-group mt-5">
+              <label for="textarea"><h3>Welcome to Text-Utils</h3></label>
+              <textarea class="form-control" id="textarea" rows="3" name="textarea" style="height:200px;"></textarea>
+            </div>
+
+            <div class="form-check form-switch mt-1">
+                <input class="form-check-input" type="checkbox" id="capital" checked name="capital">
+                <label class="form-check-label" for="capital">Upper Case Text</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="title"  name="title">
+                <label class="form-check-label" for="title">Title Text</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="small"  name="small">
+                <label class="form-check-label" for="small">Small Text</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="punctution"  name="punctution">
+                <label class="form-check-label" for="punctution">Punctution remove</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="Character"  name="Character">
+                <label class="form-check-label" for="Character">Character count</label>
+            </div>
+
+            <button type="Submit" class="btn btn-primary my-1">Submit</button>
+          </form>
+    </div>
+</div>
+{% endblock body %}
